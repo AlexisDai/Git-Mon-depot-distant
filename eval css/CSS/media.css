@@ -1,0 +1,23 @@
+
+@media screen and (max-width: 768px) 
+{
+ img{
+     max-width: 100%;
+     height: auto;
+    }
+
+    .droite{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 120%;
+    }
+
+    section{
+        font-size: 120%;
+    }
+
+}   

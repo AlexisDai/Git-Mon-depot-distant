@@ -1,0 +1,47 @@
+
+html{
+    font-size: 100%;
+}
+
+nav{
+    background-color: #000;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+ul{
+   display: flex;
+   justify-content: flex-start;
+}
+
+a{
+   color: #fff; margin-right: 5px; 
+}
+
+
+.droite{
+    float: right;
+    background-color: lightgrey;
+    width: 600px;
+    height: 420px;
+}  
+
+footer{
+    background-color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+fieldset{
+    width: 20%; /* bordure formulaire */
+}
+
+.logo{
+   float:left;
+}
+.slogan{
+    font-size:50px;
+  text-align: center;
+}
+
