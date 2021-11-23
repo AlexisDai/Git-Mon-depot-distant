@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container"> 
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-7 col-lg-8 col-xl-9"></div> 
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3"></div> 
+        </div>
+
+
+
+
+    <!--*************************************************-->
+    <!--**********Tout ce qui concerne l'entête**********-->
+    <!--*************************************************-->
+    
+
+
+
+    <header class="col-12"> 
+         <div class="d-flex justify-content-between">
+            <div class="float-left">
+                <img src="IMG/jarditou_logo.jpg" class="img-fluid" alt="logo jarditou" height="100" width="300">
+             </div>
+            <div class="display-4">
+                <p><strong>Tout le jardin</strong></p>
+            </div>
+        </div>
+
+
+
+    <!--*************************************************-->
+    <!--************** Barre de navigation **************-->
+    <!--*************************************************-->
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="Index.html">Jarditou.com</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="Index.html" title="Accueil">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tableau1.html" title="Tableau">Tableau</a>
+             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html" title="Contact">Contact</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+             <input class="form-control mr-sm-2" type="search" placeholder="Votre Promotion" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+         </form>
+    </div>
+ </nav>
+
+
+
+
+    <!--*************************************************-->
+    <!--************ Fin barre de navigation ************-->
+    <!--*************************************************-->
+
+
+
+
+
+    <img src="IMG/promotion.jpg" class="img-fluid" alt="promotion" height="364">
+    </header>
+    
+
+    
+    <!--*************************************************-->
+    <!--*******Tout ce qui concerne le formulaire********-->
+    <!--*************************************************-->
+    
+    
+    
+    
+<p class="col-12">* Ces zones sont obligatoires</p>
+
+    
+    <form action="http://bienvu.net/script.php" method="POST" class="col-12">
+        
+            <span class="display-4"><strong>Vos coordonnées</strong></span>
+            <div class="form-group">
+                <label for="nom">Votre nom* :</label>
+                <input type="text" name="nom" id="nom" class="form-control" placeholder="Veuillez saisir votre nom">
+            </div>
+            <div class="form-group">
+                <label for="prénom">Votre prénom* :</label>
+                <input type="text" name="prenom" id="prénom" class="form-control" placeholder="Veuillez saisir votre prénom">
+            </div>
+            
+                <label>Sexe* :</label>
+            <div class="custom-radio">
+                <label class="radio-inline control-label">
+                    <input id="Fille" name="sexe" type="radio" value="2">Féminin
+                </label>
+                
+                <label class="radio-inline control-label spacing">
+                    <input id="Garçon" name="sexe" type="radio" value="1">Masculin
+                </label>
+
+                <label class="radio-inline control-label">
+                    <input id="Neutre" name="sexe" type="radio" value="0">Neutre
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="ddn">Date de naissance* :</label>
+                <input type="date" name="ddn" id="ddn" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="cp">Code postal* :</label>
+                <input type="number" name="cp" id="cp" class="form-control">
+            </div>  
+            <div class="form-group">
+                <label for="adresse">Adresse :</label>
+                <input type="text" name="adresse" id="adresse" class="form-control">
+             </div>
+             <div class="form-group">
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id="ville" class="form-control">
+             </div>
+             <div class="form-group">
+                <label for="email">Email* :</label>
+                <input type="email" name="email" id="email" placeholder="dave.loper@afpa.fr" class="form-control">
+            </div><br>
+        
+             <span class="display-4"><strong>Votre demande</strong></span>
+                <div class="form-group">
+                     <label for="sujet">Sujet* :</label>
+                    <select id="sujet" size="1" class="form-control">
+                         <option value="Veuillez sélectionner un sujet" selected>Veuillez sélectionner un sujet</option>
+                         <option value="Mes commandes">Mes commandes</option>
+                         <option value="Questions sur un produit">Questions sur un produit</option>
+                         <option value="Réclamation">Réclamation</option>
+                        <option value="Autres">Autres</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="questions">Votre question* :</label>
+                    <input type="text" name="questions" id="questions" class="form-control">
+                </div>
+        <br>
+
+        <input type="checkbox" name="validation" value="j'accepte">* J'accepte le traitement informatique de ce formulaire<br>
+        <input type="submit" value="Envoyer" class="btn btn-dark mt-3"> <input type="reset" value="Annuler" class="btn btn-dark mt-3">
+        
+
+    </form>
+
+
+
+    <!--*************************************************-->
+    <!--******Tout ce qui concerne le pied-de-page*******-->
+    <!--*************************************************-->
+     
+
+
+
+
+ <div class="col-12">
+    <footer class="navbar  navbar-expand-lg navbar-dark bg-dark mt-3">
+      <div class="pos-f-t">
+          <div class="collappse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                 <a class="nav-link" href="mentions_légales.html" title="mentions légales">Mentions légales</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="horaires.html" title="horaires">Horaires</a>
+            </li>
+            <li class="nav-item">
+                 <a class="nav-link" href="plan_du_site.html" title="plan du site">Plan du site</a>
+             </li>
+        </ul> 
+        </div>
+     </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </footer>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</div>
+</body>
+</html>
