@@ -9,6 +9,9 @@
     var missPrenom = document.getElementById("missPrenom");
     var prenomValid = /^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/;
     
+    var date = document.getElementById("ddn");
+    var missDate = document.getElementById("missDate");
+
     var cp = document.getElementById("cp");
     var missCp = document.getElementById("missCp");
     var cpValid = /^[0-9]{5}$/;
@@ -25,9 +28,16 @@
     var missEmail = document.getElementById("missEmail");
     var emailValid = /^[a-z0-9.-]+@[a-z0-9.-]{2,}[.][a-z]{2,4}$/
 
+    var sujet = document.getElementById("sujet");
+    var missSujet = document.getElementById("missSujet"); 
+
     var question = document.getElementById("question");
     var missQuestion = document.getElementById("missQuestion");
     var questionValid = /^[\D0-9]*$/
+
+    var check = document.getElementById("check");
+    var missCheck = document.getElementById("missCheck");
+
 
     formValid.addEventListener('click', validation);
 
@@ -68,6 +78,19 @@
             missPrenom.textContent = "Format incorrect";
             missPrenom.style.color = "orange";
         }
+        
+       
+        ////////////////////////////////
+        //Validation Date de naissance//
+        ////////////////////////////////
+
+        if(date.validity.valueMissing){
+            event.preventDefault();
+            missDate.textContent = "Date de naissance manquante";
+            missDate.style.color = "red";
+        }
+
+
 
         /////////////////////////////
         //Validation du Code postal//
@@ -119,6 +142,16 @@
             missEmail.style.color =" orange";
         }
         
+        ////////////////////
+        //Validation sujet//
+        ////////////////////
+
+        if(sujet.validity.valueMissing){
+            event.preventDefault();
+            missSujet.textContent = "Indiquez un sujet";
+            missSujet.style.color = "red";
+        }
+
         ///////////////////////
         //Validation Question//
         ///////////////////////
@@ -132,4 +165,22 @@
             missQuestion.textContent = "Format incorrect";
             missQuestion.style.color = "orange";
         }
+
+
+        ////////////
+        //CheckBox//
+        ////////////
+    
+        if(check.validity.valueMissing){
+            event.preventDefault();
+            missCheck.textContent = "Cochez cette case pour continuer";
+            missCheck.style.color = "red";
+        }
+    
+    
+    
+    
+    
+    
+    
     }   

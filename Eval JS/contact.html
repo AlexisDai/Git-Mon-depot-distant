@@ -131,6 +131,7 @@
             <div class="form-group">
                 <label for="ddn">Date de naissance* :</label>
                 <input type="date" name="ddn" id="ddn" class="form-control" min="1900-01-01" max="2021-12-15" required>
+                <span id="missDate"></span>
             </div>
 
 
@@ -172,6 +173,7 @@
                          <option value="Réclamation">Réclamation</option>
                          <option value="Autres">Autres</option>
                      </select>
+                     <span id="missSujet"></span>
                 </div>
 
 
@@ -182,7 +184,8 @@
                 </div>
         <br>
 
-        <input type="checkbox" name="validation" value="j'accepte" required>* J'accepte le traitement informatique de ce formulaire<br>
+        <input type="checkbox" name="validation" value="j'accepte" id="check" required>* J'accepte le traitement informatique de ce formulaire
+        <span id="missCheck"></span><br>
         <input type="submit" value="Envoyer" class="btn btn-dark mt-3" id="validation" onclick="checkForm()"> <input type="reset" value="Annuler" class="btn btn-dark mt-3">
         
 
