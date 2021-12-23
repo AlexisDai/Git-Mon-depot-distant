@@ -62,6 +62,8 @@
             event.preventDefault();
             missNom.textContent = "Format incorrect";
             missNom.style.color = "orange";
+        }else if(nomValid.test(nom.value) == true){
+            missNom.hidden = true;
         }
 
         //////////////////////////////
@@ -77,8 +79,9 @@
             event.preventDefault();
             missPrenom.textContent = "Format incorrect";
             missPrenom.style.color = "orange";
+        }else if(prenomValid.test(prenom.value) == true){
+            missPrenom.hidden = true;
         }
-        
        
         ////////////////////////////////
         //Validation Date de naissance//
@@ -88,8 +91,9 @@
             event.preventDefault();
             missDate.textContent = "Date de naissance manquante";
             missDate.style.color = "red";
+        }else if(date.validity){
+            missDate.hidden=true;
         }
-
 
 
         /////////////////////////////
@@ -105,6 +109,8 @@
             event.preventDefault();
             missCp.textContent = "Format incorrect";
             missCp.style.color = "orange";
+        }else if(cpValid.test(cp.value) == true){
+            missCp.hidden = true;
         }
 
         ///////////////////////////
@@ -116,6 +122,8 @@
             event.preventDefault();
             missAdresse.textContent = "Format incorrect";
             missAdresse.style.color = "orange"
+        }else if(adresseValid.test(adresse.value) == true){
+            missAdresse.hidden = true;
         }
 
         //////////////////////////
@@ -126,6 +134,8 @@
             event.preventDefault();
             missVille.textContent = "Format incorrect";
             missVille.style.color = "orange";
+        }else if(villeValid.test(ville.value) == true){
+            missVille.hidden = true;
         }
     
         ////////////////////
@@ -140,6 +150,8 @@
             event.preventDefault();
             missEmail.textContent = "Format incorrect";
             missEmail.style.color =" orange";
+        }else if(emailValid.test(email.value) == true){
+            missEmail.hidden = true;
         }
         
         ////////////////////
@@ -150,6 +162,8 @@
             event.preventDefault();
             missSujet.textContent = "Indiquez un sujet";
             missSujet.style.color = "red";
+        }else if(sujet.validity){
+            missSujet.hidden = true;
         }
 
         ///////////////////////
@@ -164,6 +178,8 @@
             event.preventDefault();
             missQuestion.textContent = "Format incorrect";
             missQuestion.style.color = "orange";
+        }else if(questionValid.test(question.value) == true){
+            missQuestion.hidden = true;
         }
 
 
@@ -175,6 +191,8 @@
             event.preventDefault();
             missCheck.textContent = "Cochez cette case pour continuer";
             missCheck.style.color = "red";
+        }else if(check.validity){
+            missCheck.hidden = true;
         }
     
     
