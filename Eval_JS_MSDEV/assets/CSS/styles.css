@@ -1,0 +1,75 @@
+@media screen and (max-width: 768px){
+    aside{
+        display: none;
+    }
+ 
+    ul{
+        flex-direction: column;
+    }
+
+    body{
+        font-size: 130%;
+    }
+
+    .page{
+        justify-content: center;
+    }
+
+}
+
+#tableau{
+    overflow-x: auto;
+}
+
+.entête{
+    display: flex;
+    justify-content:space-between;
+}
+p{
+    font-size: 150%;
+}
+
+#logo{
+    width: 25%;
+    height: 25%;
+}
+
+#promo{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    background-color: black;
+    
+}
+
+a{
+    color: white; 
+}
+
+ul{
+   list-style-type: none;
+   display: flex;
+   justify-content: start;
+}
+
+li{
+    margin:2%;
+}
+
+.page{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+section{
+    width: 75%;
+}
+
+aside{
+    
+    width: 25%;
+    background-color: lightgrey;
+    
+}
