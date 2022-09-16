@@ -1,0 +1,9 @@
+per_num     INT AUTO_INCREMENT      id de la personne
+per_nom     varchar(255)            nom de la personne
+per_prenom  varchar(255)            prenom de la personne
+per_adresse varchar(255)            adresse de la personne
+per_ville   varchar(255)            ville de résidence de la personne
+
+
+gro_num     INT AUTO_INCREMENT      id du groupe
+gro_libelle varchar(255)            libelle du groupe

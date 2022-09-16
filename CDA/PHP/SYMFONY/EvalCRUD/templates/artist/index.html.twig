@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Artist index{% endblock %}
+
+{% block body %}
+    <h1 class="text-center">Liste des artistes</h1>
+
+    <table class="table table-primary table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Url</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for artist in artists %}
+            <tr>
+                <td>{{ artist.artistId }}</td>
+                <td>{{ artist.artistName }}</td>
+                <td>{{ artist.artistUrl }}</td>
+                <td>
+                    <a href="{{ path('app_artist_show', {'artistId': artist.artistId}) }}" class="btn btn-outline-dark">Voir</a>
+                    <a href="{{ path('app_artist_edit', {'artistId': artist.artistId}) }}" class="btn btn-outline-dark">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">Aucun résultat pour votre recherche</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_artist_new') }}" class="btn btn-success">Nouveau</a>
+{% endblock %}

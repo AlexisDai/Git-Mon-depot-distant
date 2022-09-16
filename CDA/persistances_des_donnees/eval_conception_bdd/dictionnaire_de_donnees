@@ -1,0 +1,29 @@
+nom_abo        varchar(255)         Nom de la personne
+pre_abo        varchar(255)         Prénom de la personne
+adr_abo        varchar(255)         Adresse de la personne
+tel_abo        varchar(10)          Téléphone de la personne
+id_bib         INT AUTO_INCREMENT   Identifiant de la bibliothécaire
+nom_bib        varchar(255)         Nom de la bibliothécaire
+pre_bib        varchar(255)         Prénom de la bibliothécaire
+dat_jou        Date                 Date du jour
+tit_liv        varchar(255)         Titre du livre
+aut_liv        varchar(255)         Auteur du livre
+edi_liv        varchar(255)         Editeur du livre
+num_liv        INT  AUTO_INCREMENT  Numéro du livre
+pas_liv        varchar(255)         Pastille du livre
+dat_edi        Date                 Date édition du livre
+dat_emp        Date                 Date d'emprunt du livre
+dat_ret        Date                 Date de retour du livre
+dat_ret_max    Date                 Date de retour maximum du livre
+dat_rel        Date                 Date de relance du livre
+dat_mis        Date                 Date de mise au rebut du livre
+id_sta         INT AUTO_INCREMENT   
+nbr_abo        Int                  Nombre d'abonnés
+nbr_liv        INT                  Nombre de livre
+nbr_rel        Int                  Nombre de relances par semaine
+nbr_abo_moi    Int                  Nombre de nouveax abonnés par mois
+nbr_ret_sem    Int                  Nombre de retours/emprunts par semaine
+nvx_liv_moi    Int                  Nombre de nouveaux livres par mois
+nbr_reb_an     Int                  Nombre de rebuts par an
+nbr_the        Int                  Nombre de thèmes
+id_cah         Int                  Identifiant du cahier

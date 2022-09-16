@@ -1,0 +1,13 @@
+###
+GET https://127.0.0.1:8000/api1
+
+
+### post produit...
+POST https://127.0.0.1:8000/api2 
+content-type: application/json
+
+{
+    "nom": "poipoi",
+    "prix": 654
+}
+

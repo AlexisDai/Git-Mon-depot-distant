@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<h1>Categorie: {{ categorie.nom }}</h1>
+
+{% for sscat in categorie.sousCategories %}
+    <div>
+    <a href="">
+        {{ sscat.nom }}
+    </a>
+    </div>
+{% endfor %}
+
+
+{% endblock %}

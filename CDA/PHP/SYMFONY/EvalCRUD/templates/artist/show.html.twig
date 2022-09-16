@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails{% endblock %}
+
+{% block body %}
+    <h1>Détails</h1>
+
+    <table class="table table-primary table-striped table-hover table-bordered">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ artist.artistId }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ artist.artistName }}</td>
+            </tr>
+            <tr>
+                <th>Url</th>
+                <td>{{ artist.artistUrl }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_artist_index') }}" class="btn btn-outline-dark">Retour à la liste</a>
+
+    <a href="{{ path('app_artist_edit', {'artistId': artist.artistId}) }}" class="btn btn-outline-dark">Modifier</a>
+
+    <a href="{{ path('app_comments_new') }}" class="btn btn-outline-dark">Ajouter un commentaire</a>
+
+    {{ include('artist/_delete_form.html.twig') }}
+{% endblock %}
