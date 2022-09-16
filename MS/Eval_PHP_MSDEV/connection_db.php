@@ -2,7 +2,7 @@
     $servname ='localhost';
     $dbname ='record';
     $user ='admin';
-    $pass ='Afpa1234';
+    $pass ='29janvier';
                
     try{
         $db=new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
@@ -15,6 +15,4 @@
        die();
     }
                             
-    
-
     ?>

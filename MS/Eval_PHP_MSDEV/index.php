@@ -8,7 +8,14 @@
     <title>Liste</title>
 </head>
 
-<?php include'connection_db.php';?>
+<?php include'connection_db.php';
+
+    session_start();
+
+    if (!isset($_SESSION['auth'])) {
+        header('location:login_form.php');
+    }
+?>
 
 <body>
     <div class="container">
